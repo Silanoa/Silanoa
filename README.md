@@ -4,7 +4,9 @@
 
 Co-founder of [zeroRL](https://github.com/Dar-rius/zeroRL) · Building and running AI systems at [DIT](https://dit.sn)
 
-[LinkedIn](https://www.linkedin.com/in/rosalexahan/) · [Email](mailto:rosalexahan2@gmail.com) · [X](https://twitter.com/a_rosalex)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rosalexahan/)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rosalexahan2@gmail.com)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/a_rosalex)
 
 ---
 
@@ -13,7 +15,7 @@ Co-founder of [zeroRL](https://github.com/Dar-rius/zeroRL) · Building and runni
 - ~3 years building ML systems and full-stack apps, including production deployments
 - MSc Artificial Intelligence, **Dakar Institute of Technology** (Very Good, class valedictorian)
 - Teach Python, data collection, and deep learning
-- Open to **AI / ML engineering roles** (computer vision, applied ML, RL tooling)
+- Open to roles in **AI / ML engineering** and **full-stack development**
 
 ---
 
@@ -41,9 +43,16 @@ Operational stack today = perception + thresholded decisions + persistence. Next
 
 ### zeroRL *(co-founder)*
 
-[zeroRL](https://github.com/Dar-rius/zeroRL) is a modular **PyTorch** RL framework: high-level PPO (`easy_train_ppo`), mid-level `BaseTrain` with swappable agent/env/buffer/update, and low-level primitives for custom loops. Gymnasium + custom MuJoCo. On PyPI: [`zerorl`](https://pypi.org/project/zerorl/).
+[zeroRL](https://github.com/Dar-rius/zeroRL) is a full **PyTorch** reinforcement-learning framework built for experiment control — not a thin wrapper around a single algo.
 
-I work on the library itself — training stack, envs/examples, Windows support, logging/export, CI — not only MuJoCo demos. Goal: keep the pipeline explicit and usable for research experiments.
+You can work at three levels of abstraction:
+- **High-level** — `easy_train_ppo` for a complete PPO run (agent, vectorized envs, buffer, logging) in a few lines
+- **Mid-level** — `BaseTrain` with swappable agent, env, buffer, and update function
+- **Low-level** — primitives to assemble the training loop yourself (`Buffer`, GAE/PPO ops, logging, env helpers)
+
+Includes Gymnasium integration, custom **MuJoCo** environments, config system (`TrainConfig` / `AlgoConfig`), TensorBoard / W&B tracking, checkpointing, and a growing example suite. Packaged on PyPI as [`zerorl`](https://pypi.org/project/zerorl/) (Apache-2.0).
+
+I contribute across the stack: training pipeline, envs & examples, Windows support, logging/export, and CI.
 
 ### MyDIT
 
@@ -68,7 +77,18 @@ Hotel ops chatbot (booking, services, cancellations): PyTorch intent model, NLTK
 
 ## Stack
 
-`Python` · `PyTorch` · `OpenCV` · `InsightFace` · `CUDA/ONNX` · `Laravel` · `Django` · `Flask` · `Vue` · `React` · `PostgreSQL` · `Docker`
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ML / DL · Computer Vision · NLP · RL · data pipelines
 
@@ -77,5 +97,5 @@ ML / DL · Computer Vision · NLP · RL · data pipelines
 ## Currently
 
 - Extending **SmartAttendance** toward adaptive video analytics and writing papers on that track
-- Improving **[zeroRL](https://github.com/Dar-rius/zeroRL)** as a serious research RL toolkit (APIs, algorithms, envs, DX)
-- Looking for my next role in **AI / ML engineering**
+- Pushing **[zeroRL](https://github.com/Dar-rius/zeroRL)** further — APIs, algorithms, envs, developer experience
+- Actively exploring new opportunities in **AI / ML** and **full-stack**
