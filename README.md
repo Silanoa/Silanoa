@@ -1,92 +1,81 @@
 # Rosalex Ahan
 
-**AI Engineer & Full-Stack Developer** · Dakar, Senegal  
-Co-building [zeroRL](https://github.com/Dar-rius/zeroRL) · Shipping production systems at [DIT](https://dit.sn)
+**AI Engineer · Full-Stack Developer** · Dakar, Senegal
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rosalexahan/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rosalexahan2@gmail.com)
-[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/a_rosalex)
+Co-founder of [zeroRL](https://github.com/Dar-rius/zeroRL) · Building and running AI systems at [DIT](https://dit.sn)
 
----
-
-## In a nutshell
-
-- AI engineer & full-stack developer (~3 years) — from problem framing to production.
-- Master's in Artificial Intelligence at **Dakar Institute of Technology** (Very Good, class valedictorian).
-- I teach Python, data collection, and deep learning.
-- Open to collaboration on **Python**, **computer vision**, **RL**, and **product-facing backends**.
+[LinkedIn](https://www.linkedin.com/in/rosalexahan/) · [Email](mailto:rosalexahan2@gmail.com) · [X](https://twitter.com/a_rosalex)
 
 ---
 
-## Featured work
+## About
 
-### SmartAttendance (`model_pointage`) — production computer vision
+- ~3 years building ML systems and full-stack apps, including production deployments
+- MSc Artificial Intelligence, **Dakar Institute of Technology** (Very Good, class valedictorian)
+- Teach Python, data collection, and deep learning
+- Open to **AI / ML engineering roles** (computer vision, applied ML, RL tooling)
 
-Real-time **facial recognition attendance and access control**, deployed operationally and integrated with the MyDIT university platform.
+---
 
-- Multi-camera pipelines (USB + RTSP / FFmpeg)
-- InsightFace stack (RetinaFace + ArcFace, CUDA) with dlib fallback
-- Auto check-in / check-out, unknown visitor handling, admin web UI
-- PostgreSQL in production, optional InfluxDB metrics
-- REST/JWT sync with external student profile APIs
+## Featured
+
+### SmartAttendance (`model_pointage`)
+
+Production facial-recognition attendance system used on campus and wired into **MyDIT**.
+
+**Pipeline**
+- Detection: **RetinaFace** · embeddings: **ArcFace (r100)** via InsightFace / ONNX Runtime (CUDA; dlib fallback)
+- Continuous multi-camera ingest (USB DirectShow + RTSP through FFmpeg)
+- Gallery match with cosine/threshold scoring and **multi-frame confirmation** before logging an event
+- Concurrent multi-person tracking; unknown faces kept as visitors; local enrollment when needed
+- One structured attendance record per person/day (arrival fixed, departure updated live)
+
+**Systems**
+- Flask + Waitress admin UI · PostgreSQL in prod (SQLite for local) · optional InfluxDB latency/throughput metrics
+- REST/JWT sync of student photos and embeddings with MyDIT
+
+**Research direction (papers in progress)**  
+Operational stack today = perception + thresholded decisions + persistence. Next layer from the same video streams: spatio-temporal patterns (schedules, co-presence, cross-camera transitions), clustering recurrent unknowns into stable identities, calibrated behavioral anomaly alerts, and a continuous-learning loop with a reproducible evaluation protocol.
 
 **Repo:** [Silanoa/model_pointage](https://github.com/Silanoa/model_pointage)
 
-### zeroRL — open-source RL framework *(co-founder)*
+### zeroRL *(co-founder)*
 
-Modular, researcher-controlled **PyTorch** reinforcement learning framework: high-level PPO training, replaceable `BaseTrain` components, and low-level primitives. Gymnasium + custom **MuJoCo** envs. On PyPI as [`zerorl`](https://pypi.org/project/zerorl/).
+[zeroRL](https://github.com/Dar-rius/zeroRL) is a modular **PyTorch** RL framework: high-level PPO (`easy_train_ppo`), mid-level `BaseTrain` with swappable agent/env/buffer/update, and low-level primitives for custom loops. Gymnasium + custom MuJoCo. On PyPI: [`zerorl`](https://pypi.org/project/zerorl/).
 
-My contributions include MuJoCo environments/examples, Windows-friendly training, TensorBoard/GIF tooling, and CI fixes for headless rendering.
+I work on the library itself — training stack, envs/examples, Windows support, logging/export, CI — not only MuJoCo demos. Goal: keep the pipeline explicit and usable for research experiments.
 
-**Upstream:** [Dar-rius/zeroRL](https://github.com/Dar-rius/zeroRL)
+### MyDIT
 
-### MyDIT — university platform *(production)*
-
-End-to-end delivery of **MyDIT** (admin + students): product framing, Laravel backend modules, integrations, and production rollout — including wiring the facial-attendance system into campus operations.
-
-*(Private org repositories under Dakar Institute of Technology.)*
+University platform (admin + students) I helped take to production: Laravel modules, integrations, deploy — including connecting SmartAttendance to campus workflows.
 
 ---
 
-## Teaching & applied projects
+## Teaching labs
 
-Course materials I built while teaching IoT / data / ML practice:
+Built for courses I teach (IoT / data / ML practice):
 
-| Project | What it teaches |
+| Repo | Focus |
 | --- | --- |
-| [projet1-dht22-thingsboard-](https://github.com/Silanoa/projet1-dht22-thingsboard-) | ESP32 / DHT22 to ThingsBoard over MQTT, plus a PC simulation path |
-| [projet2-pompe-meteo-ml](https://github.com/Silanoa/projet2-pompe-meteo-ml) | Connected greenhouse: ESP32 pump control + weather ML agent + ThingsBoard dashboard |
+| [projet1-dht22-thingsboard-](https://github.com/Silanoa/projet1-dht22-thingsboard-) | ESP32 DHT22 → ThingsBoard (MQTT) + PC simulation |
+| [projet2-pompe-meteo-ml](https://github.com/Silanoa/projet2-pompe-meteo-ml) | Greenhouse: ESP32 pump + weather ML agent + ThingsBoard |
 
-### Hotel chatbot — NLP showcase
+### Hotel chatbot
 
-Intent-based hotel operations chatbot (booking, services, cancellations) with **PyTorch**, NLTK, MySQL, and a reinforcement-learning improvement loop. Clean architecture, documented setup, end-to-end runnable pipeline.
-
-**Repo:** [Silanoa/hotel-chatbot](https://github.com/Silanoa/hotel-chatbot)
+Hotel ops chatbot (booking, services, cancellations): PyTorch intent model, NLTK, MySQL, plus an RL loop to improve replies over time — [Silanoa/hotel-chatbot](https://github.com/Silanoa/hotel-chatbot).
 
 ---
 
 ## Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+`Python` · `PyTorch` · `OpenCV` · `InsightFace` · `CUDA/ONNX` · `Laravel` · `Django` · `Flask` · `Vue` · `React` · `PostgreSQL` · `Docker`
 
-*AI:* Machine Learning · Deep Learning · Computer Vision · NLP · Reinforcement Learning  
-*Also:* Flask, FastAPI, Tailwind, MySQL, scraping / data pipelines
+ML / DL · Computer Vision · NLP · RL · data pipelines
 
 ---
 
 ## Currently
 
-- Hardening and extending **SmartAttendance** (adaptive video-analytics research track)
-- Growing **zeroRL** with clearer APIs and MuJoCo examples
-- Teaching and shipping AI / full-stack work around Dakar
-
-Ask me about computer vision in production, RL tooling, or Laravel + ML integrations.
+- Extending **SmartAttendance** toward adaptive video analytics and writing papers on that track
+- Improving **[zeroRL](https://github.com/Dar-rius/zeroRL)** as a serious research RL toolkit (APIs, algorithms, envs, DX)
+- Looking for my next role in **AI / ML engineering**
