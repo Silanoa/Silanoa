@@ -7,6 +7,7 @@ Co-founder of [zeroRL](https://github.com/Dar-rius/zeroRL) · Building and runni
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rosalexahan/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rosalexahan2@gmail.com)
 [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/a_rosalex)
+[![PyPI zerorl](https://img.shields.io/pypi/v/zerorl?style=for-the-badge&logo=pypi&logoColor=white&label=zerorl)](https://pypi.org/project/zerorl/)
 
 ---
 
@@ -36,8 +37,10 @@ Production facial-recognition attendance system used on campus and wired into **
 - Flask + Waitress admin UI · PostgreSQL in prod (SQLite for local) · optional InfluxDB latency/throughput metrics
 - REST/JWT sync of student photos and embeddings with MyDIT
 
-**Research direction (papers in progress)**  
-Operational stack today = perception + thresholded decisions + persistence. Next layer from the same video streams: spatio-temporal patterns (schedules, co-presence, cross-camera transitions), clustering recurrent unknowns into stable identities, calibrated behavioral anomaly alerts, and a continuous-learning loop with a reproducible evaluation protocol.
+**Research (papers in progress)**
+- Spatio-temporal patterns from the same streams (schedules, co-presence, cross-camera transitions)
+- Clustering recurrent unknowns into stable identities
+- Calibrated anomaly alerts + continuous-learning loop with a reproducible eval protocol
 
 **Repo:** [Silanoa/model_pointage](https://github.com/Silanoa/model_pointage)
 
@@ -50,7 +53,7 @@ You can work at three levels of abstraction:
 - **Mid-level** — `BaseTrain` with swappable agent, env, buffer, and update function
 - **Low-level** — primitives to assemble the training loop yourself (`Buffer`, GAE/PPO ops, logging, env helpers)
 
-Includes Gymnasium integration, custom **MuJoCo** environments, config system (`TrainConfig` / `AlgoConfig`), TensorBoard / W&B tracking, checkpointing, and a growing example suite. Packaged on PyPI as [`zerorl`](https://pypi.org/project/zerorl/) (Apache-2.0).
+Includes Gymnasium integration, custom **MuJoCo** environments, config system (`TrainConfig` / `AlgoConfig`), TensorBoard / W&B tracking, checkpointing, and a growing example suite. On PyPI: [`zerorl`](https://pypi.org/project/zerorl/) (Apache-2.0).
 
 I contribute across the stack: training pipeline, envs & examples, Windows support, logging/export, and CI.
 
@@ -68,6 +71,7 @@ Built for courses I teach (IoT / data / ML practice):
 | --- | --- |
 | [projet1-dht22-thingsboard-](https://github.com/Silanoa/projet1-dht22-thingsboard-) | ESP32 DHT22 → ThingsBoard (MQTT) + PC simulation |
 | [projet2-pompe-meteo-ml](https://github.com/Silanoa/projet2-pompe-meteo-ml) | Greenhouse: ESP32 pump + weather ML agent + ThingsBoard |
+| [projet3-iot-telegram](https://github.com/Silanoa/projet3-iot-telegram) | IoT alerts via Telegram bot |
 
 ### Hotel chatbot
 
@@ -98,4 +102,4 @@ ML / DL · Computer Vision · NLP · RL · data pipelines
 
 - Extending **SmartAttendance** toward adaptive video analytics and writing papers on that track
 - Pushing **[zeroRL](https://github.com/Dar-rius/zeroRL)** further — APIs, algorithms, envs, developer experience
-- Actively exploring new opportunities in **AI / ML** and **full-stack**
+- Actively exploring opportunities in **AI / ML** and **full-stack**
