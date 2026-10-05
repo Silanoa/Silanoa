@@ -1,4 +1,4 @@
-# Rosalex Ahan
+# Rosalex AHAN
 
 **AI Engineer · Full-Stack Developer** · Dakar, Senegal
 
